@@ -32,8 +32,8 @@ default_category:
 # content
 # GitHub user/repository
 # website contents comes from this repository issues
-user: Jymn_Chen
-repository: slowdun3
+user: lowkey2016
+repository: lowkey2016.github.io
 
 
 # Advance
@@ -42,12 +42,19 @@ repository: slowdun3
 # script file names
 scripts:
   - content.js
-  - active.js
+  # - active.js
 
 # plugins
 # npm modules
 plugins:
-  # - xxx module
+  - acyort-rss
+  - acyort-archives
+  - acyort-paginator
+
+rss: true
+
+archives:
+  per_page: 5
 
 # output
 # where static site files located
