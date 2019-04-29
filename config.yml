@@ -16,12 +16,13 @@ theme: donob
 # post count per page. set 0 to disable it
 # default is 10
 per_page: 10
+archives_per_page: 30
 
 # menu
 # navigation menus of website
 menu:
-  所有文章: /posts/
-  分类: /tags/
+  # 所有文章: /archives/
+  # 分类: /tags/
   关于: /about/
 
 # default category name
@@ -51,9 +52,6 @@ plugins:
   - acyort-paginator
 
 rss: rss.xml
-
-# archives:
-#   per_page: 5
 
 # output
 # where static site files located
