@@ -16,13 +16,11 @@ theme: donob
 # post count per page. set 0 to disable it
 # default is 10
 per_page: 10
-archives_per_page: 30
 
 # menu
 # navigation menus of website
 menu:
-  # 所有文章: /archives/
-  # 分类: /tags/
+  所有文章: /archives/
   关于: /about/
 
 # default category name
@@ -42,7 +40,7 @@ repository: lowkey2016.github.io
 # script file names
 scripts:
   - content.js
-  # - active.js
+  - active.js
 
 # plugins
 # npm modules
@@ -51,7 +49,10 @@ plugins:
   - acyort-archives
   - acyort-paginator
 
-rss: rss.xml
+rss: true
+
+archives:
+  per_page: 10
 
 # output
 # where static site files located
@@ -75,19 +76,20 @@ language: cn
 # code line numbers
 # whether showing line numbers in code block
 # default is true
-# line_numbers:
+line_numbers:
 
 # order
 # post ordering, order posts by issues create_time(created) or update_time(updated)
 # default is created
-# order:
+order:
 
 # directory
 # subdirectory in public_dir
 # default is categories, tags, posts
-category_dir: categories
-tag_dir: tags
-post_dir: posts
+archives_dir:
+category_dir:
+tag_dir:
+post_dir:
 
 # token
 # github access token

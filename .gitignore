@@ -3,3 +3,5 @@ Thumbs.db
 *.swp
 themes/
 _issues.json
+node_modules/*
+package.json
