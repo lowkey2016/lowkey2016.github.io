@@ -15,19 +15,18 @@ theme: donob
 # pagination
 # post count per page. set 0 to disable it
 # default is 10
-per_page:
+per_page: 10
 
 # menu
 # navigation menus of website
 menu:
-  所有文章: /archives/
-  categories: /categories/
-  tags: /tags/
+  所有文章: /posts/
+  分类: /tags/
   关于: /about/
 
 # default category name
 # default is "uncategorized"
-default_category:
+default_category: 未分类
 
 # content
 # GitHub user/repository
@@ -51,20 +50,19 @@ plugins:
   - acyort-archives
   - acyort-paginator
 
-rss:
+rss: rss.xml
 
-archives:
-  per_page: 5
+# archives:
+#   per_page: 5
 
 # output
 # where static site files located
-public_dir: /
+public_dir: public
 
 # authors
 # Github usernames, users whose issues can be generated to post
 authors:
-#  - author0
-#  - author1
+  - lowkey2016
 
 # timezone
 # website timezone. use machine setting by default
@@ -79,19 +77,19 @@ language: cn
 # code line numbers
 # whether showing line numbers in code block
 # default is true
-line_numbers:
+# line_numbers:
 
 # order
 # post ordering, order posts by issues create_time(created) or update_time(updated)
 # default is created
-order:
+# order:
 
 # directory
 # subdirectory in public_dir
 # default is categories, tags, posts
-category_dir:
-tag_dir:
-post_dir:
+category_dir: categories
+tag_dir: tags
+post_dir: posts
 
 # token
 # github access token
